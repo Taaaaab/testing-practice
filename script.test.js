@@ -1,5 +1,5 @@
-const sum = require('./script');
+const capitilize = require('./script');
 
-test('adds 1 + 2 to equal 3', () => {
-  expect(sum(1, 2)).toBe(3);
+test('Capitilize function test', () => {
+  expect(capitilize('word')).toBe('Word');
 });

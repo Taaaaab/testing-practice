@@ -1,4 +1,10 @@
-function sum(a, b) {
-    return a + b;
+function capitilize(word) {
+    const myArray = Array.from(word);
+    const lower = myArray.shift([0]);
+    lower.toString();
+    const upper = lower.toUpperCase();
+    myArray.unshift(upper);
+    return myArray.join('');
   }
-  module.exports = sum;
+
+  module.exports = capitilize;
