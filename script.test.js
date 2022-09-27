@@ -18,3 +18,9 @@ test('basic calculator function', () => {
   expect(calculator.mul(6, 2)).toBe(12);
   expect(calculator.div(24, 6)).toBe(4);
 });
+
+const caesarCipher = require('./caesar');
+
+test('should shift each character to next character', () => {
+  expect(caesarCipher('attack at dawn')).toBe('buubdl!bu!ebxo');
+});
