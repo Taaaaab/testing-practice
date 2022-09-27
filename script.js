@@ -1,10 +1,10 @@
 function capitilize(word) {
-    const myArray = Array.from(word);
-    const lower = myArray.shift([0]);
-    lower.toString();
-    const upper = lower.toUpperCase();
-    myArray.unshift(upper);
-    return myArray.join('');
-  }
+  const myArray = Array.from(word);
+  const firstLetter = myArray.shift([0]);
+  firstLetter.toString();
+  const firstLUppercase = firstLetter.toUpperCase();
+  myArray.unshift(firstLUppercase);
+  return myArray.join("");
+}
 
-  module.exports = capitilize;
+module.exports = capitilize;
